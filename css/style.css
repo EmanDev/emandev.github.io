@@ -1,0 +1,43 @@
+/*!
+ * Style.css by Eman Marcaida
+ * A CSS base modifier of certain classes and IDs
+ * Custom-made 17/06/2019
+ */
+
+.grey.darken-nav {
+    background-color: #343232 !important;
+}
+
+.grey.darken-body {
+    background-color: #2E2A2A !important;
+}
+
+.grey.darken-footer {
+    background-color: #3D3838 !important;
+}
+
+
+/*Matches height with floating buttons on Materialize*/
+
+.fab.fa-firefox {
+    line-height: 1.6;
+}
+
+#privacy-1,
+#security-1,
+#terms-of-use-1,
+#lite-mode-info,
+#dlinfo-info,
+#dlinfo-compiled,
+#dlinfo-info-info,
+#fi-1,
+#fi-2,
+#fi-3,
+#fi-4,
+#fi-5 {
+    text-align: justify;
+}
+
+#list-indent {
+    text-indent: 2%;
+}

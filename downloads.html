@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!--Import custom style.css-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Downloads - EmanDev</title>
+    <meta name="description" content="Downloads page for EmanDev.GitHub.Io which contains compiled developed applications and some files from the tutorials.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+    <link rel="stylesheet" href="">
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            min-width: 800px;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+
+        nav {
+            background-color: #343232;
+        }
+
+        .collection {
+            border: none;
+        }
+
+        .cursor-default {
+            cursor: default;
+        }
+
+        .margin-right-10 {
+            margin-right: 10px;
+        }
+
+        .modal-img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            /* border: 1px solid black; */
+        }
+
+        /* Custom Search Bar Placeholder */
+        ::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #757575;
+        }
+
+        :-ms-input-placeholder {
+            /* Microsoft Internet Explorer */
+            color: #757575;
+        }
+
+        ::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: #757575;
+        }
+    </style>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="index.html" class="brand-logo">EmanDev</a>
+                    <a href="#" data-target="mobile-mode" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a class="tooltipped" data-position="bottom" data-tooltip="Home" href="index.html"><i class="material-icons">home</i></a></li>
+                        <li><a class="tooltipped" data-position="bottom" data-tooltip="Downloads" href="downloads.html"><i class="material-icons">file_download</i></a></li>
+                        <li><a class="tooltipped" data-position="bottom" data-tooltip="GitHub Projects" href="github.html"><i class="material-icons">work</i></a></li>
+                        <li><a class="tooltipped modal-trigger" data-position="bottom" data-tooltip="Information" href="#modal-info"><i class="material-icons">info</i></a></li>
+                        <li><a href="#lite-mode" class="btn red btn-floating pulse modal-trigger tooltipped" data-position="bottom" data-tooltip="Lite Mode"><i class="material-icons">directions_run</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-mode">
+            <li><a href="index.html"><i class="material-icons">home</i>Home</a></li>
+            <li><a href="downloads.html"><i class="material-icons">file_download</i>Downloads</a></li>
+            <li><a class="modal-trigger" href="#modal-info"><i class="material-icons">info</i>Information</a></li>
+        </ul>
+        <!--Modals-->
+        <div class="modal" id="modal-info">
+            <div class="modal-content">
+                <h4>Information</h4>
+                <div class="divider"></div>
+                <h5>Privacy</h5>
+                <p id="privacy-1">
+                    EmanDev.github.io doesn't collect any data from the people. This website is simply a static one and
+                    doesn't contain services which requires a user to input data onto fields that would ask for any
+                    personal information.
+                </p>
+                <div class="divider"></div>
+                <h5>Security</h5>
+                <p id="security-1">
+                    Due to the nature of internet some websites hosts files that are malicious and may cause problems to
+                    the users. EmanDev.github.io doesn't contain any of those files. For this reason, source of this
+                    website is
+                    <b>open</b> to public.<br><br>Check this link for further details: <a href="https://github.com/EmanDev?tab=repositories" target="_blank">GitHub Repositories</a>
+                </p>
+                <div class="divider"></div>
+                <h5>Copyrights</h5>
+                <p id="terms-of-use-1">
+                    All possible items (images, videos, files, and etc) that can be seen here are free to use and others
+                    are probably made by Me. Items made by different creators that have been used will be credited and
+                    thanked here. If you seem to have items that I have
+                    used as part of this website and you think I don't have the permission to use, please contact me as
+                    soon as possible.
+                    <br>
+                    <br> Contact me for copyright claims and for more through <a href="mailto:emzzdroidlollipop@gmail.com">emzzdroidlollipop@gmail.com</a>.
+                </p>
+            </div>
+            <div class="divider"></div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+            </div>
+        </div>
+        <div class="modal" id="lite-mode">
+            <div class="modal-content">
+                <h4>Lite Mode</h4>
+                <div class="divider"></div>
+                <h5>Fast and Lightweight</h5>
+                <p id="lite-mode-info">
+                    Lite mode is simply my term for a fast and lightweight website. This website was made with the use
+                    of Firefox browser and was based on Materialize - a responsive CSS framework that is also based on
+                    Google's Material Design.
+                    <br>
+                    <br> Click this link for addtitional info about the supported browsers: <a href="https://github.com/Dogfalo/materialize#supported-browsers" target="_blank">Supported Browsers</a>
+                </p>
+                <div class="divider"></div>
+                <h5>Preferences</h5>
+                <p id="preferences-par1">
+                    This website has its own preferences when it comes to devices and browsers used.
+                    <ul id="list-indent">
+                        <li>
+                            <p>• Works well with Desktop (preferred) and Mobile (optional).</p>
+                        </li>
+                        <li>
+                            <p>• Works best with Firefox and Chrome.</p>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+            <div class="divider"></div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+            </div>
+        </div>
+        <!--Modals for downloads page-->
+        <div class="modal" id="dlinfo">
+            <div class="modal-content">
+                <h4>Download Info</h4>
+                <div class="divider"></div>
+                <h5>Download Sources</h5>
+                <p id="dlinfo-info">
+                    Some download files are not open source and codes are not available in the public, and some
+                    downloads' sources are archived within zips which requires download. However, I assure you that
+                    these download files are safe and does not cause any harm. Otherwise,
+                    contact me through <a href="mailto:emzzdroidlollipop@gmail.com">emzzdroidlollipop@gmail.com</a>.
+                </p>
+                <div class="divider"></div>
+                <h5>Compiled Projects</h5>
+                <p id="dlinfo-compiled">All of my projects are open source and you can view the code publicly. Please
+                    don't mirror them. If you want, compile them yourself with some modifications and upload them where
+                    you want. Some of my latest developed projects will be released here, check my GitHub Repositories for more details.
+                </p>
+            </div>
+            <div class="divider"></div>
+            <div class="modal-footer">
+                <a href="#" class="modal-close waves-effect waves-green btn-flat">OK</a>
+            </div>
+        </div>
+        <div class="modal" id="download_step">
+            <div class="modal-content">
+                <h4>How to download</h4>
+                <div class="divider"></div>
+                <h5>Step 1</h5>
+                <p id="dl-s1">
+                    Select a file you want to download from below.
+                </p>
+                <img src="img/choose-file.png" alt="Choose file" class="modal-img responsive-img">
+                <br>
+                <div class="divider"></div>
+                <h5>Step 2</h5>
+                <p id="dl-s2">
+                    Wait for the link to load and click <b>Skip Ad</b> on the top left corner.
+                </p>
+                <img src="img/skipAd.png" alt="Skip Ad" class="modal-img responsive-img">
+                <br>
+                <div class="divider"></div>
+                <h5>Step 3</h5>
+                <p id="dl-s3">
+                    Then click the download button to start downloading.
+                </p>
+                <img src="img/download.png" alt="Download" class="modal-img responsive-img">
+            </div>
+            <div class="divider"></div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+            </div>
+        </div>
+        <div class="modal" id="modal-issues">
+            <div class="modal-content">
+                <h4>Frequent Issues</h4>
+                <div class="divider"></div>
+                <h5>How to download</h5>
+                <p id="fi-1">To download, please click <a href="#download_step" class="modal-trigger">how to download</a>.</p>
+                <div class="divider"></div>
+                <h5>Error while downloading</h5>
+                <p id="fi-2">
+                    File hosting server is probably down. If this happens, wait for about a minute then refresh and download again.
+                </p>
+                <div class="divider"></div>
+                <h5>Download speed is slow</h5>
+                <p id="fi-3">
+                    If you are using <b>Google Chrome</b> or <b>Firefox</b> while downloading, try using <a href="https://www.internetdownloadmanager.com/" target="_blank">Internet Download Manager</a> to improve download speed as it uses multiple servers to download.
+                </p>
+                <div class="divider"></div>
+                <h5>Cannot find the file to download</h5>
+                <p id="fi-4">
+                    To find the file you want to download use the search bar to search for it.
+                </p>
+                <img alt="Searching for file to download" class="modal-img responsive-img" src="img/search-download.gif">
+                <br>
+                <div class="divider"></div>
+                <h5>Download links redirects to an Ad website</h5>
+                <p id="fi-5">
+                    Download links have been shortened via <a href="https://shorte.st/login" target="_blank">Shorte.st</a>, which allows ad revenues from links. This helps me earn small of amount of money (not much since only few downloads from me). If you cannot continue, <a href="https://www.softwarehow.com/disable-adblock/" target="_blank">disable any adblocker</a> you use and reload.
+                </p>
+            </div>
+            <div class="divider"></div>
+            <div class="modal-footer"><a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a></div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <ul class="collection with-header">
+                <li class="collection-header">
+                    <h4>Downloads
+                        <a href="#download_step" class="btn blue pulse btn-floating modal-trigger tooltipped" data-position="bottom" data-tooltip="How to download"><i class="material-icons">file_download</i></a>
+                        <a href="#modal-issues" class="btn red pulse btn-floating modal-trigger tooltipped" data-position="bottom" data-tooltip="Frequent Issues"><i class="material-icons">question_answer</i></a>
+                        <a href="#dlinfo" class="btn green pulse btn-floating modal-trigger tooltipped" data-position="bottom" data-tooltip="Download Info"><i class="material-icons">info</i></a>
+                    </h4>
+                    <form id="searchForm">
+                        <div class="input-field">
+                            <i class="material-icons prefix" style="margin-right: 2vh;">search</i>
+                            <input id="searchBar" onkeyup="search_download()" type="search" class="col s12" placeholder="Find a file for download...">
+                            <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                </li>
+                <li class="collection-item">
+                    <div>Aokana - Tools and Scripts (Translation is done by NekoNyan Soft)
+                        <a href="#" target="_blank" class="secondary-content">
+                            <i class="material-icons tooltipped" data-position="bottom" data-tooltip="Download">file_download</i>
+                        </a>
+                        <a href="aokana-source" target="_blank" class="secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Sources Code (RAW)">code</i></a>
+                        <a class="cursor-default secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Compiled by EmanDev">info</i></a>
+                    </div>
+                </li>
+                <li class="collection-item">
+                    <div>Counter-Strike: Global Offensive Video Settings
+                        <a href="img/csgo_settings.jpg" target="_blank" class="secondary-content">
+                            <i class="material-icons tooltipped" data-position="bottom" data-tooltip="View">visibility</i>
+                        </a>
+                        <a class="cursor-default secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="JPG Format">image</i></a>
+                        <a href="https://www.paypal.com/paypalme2/marcaida" target="_blank" class="secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Buy me a coffee">local_cafe</i></a>
+                        <a class="cursor-default secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Captured by EmanDev">camera_alt</i></a>
+                    </div>
+                </li>
+                <li class="collection-item">
+                    <div>Counter-Strike: Source Server Launcher v1.3
+                        <a href="#" target="_blank" class="secondary-content">
+                            <i class="material-icons tooltipped" data-position="bottom" data-tooltip="Download">file_download</i>
+                        </a>
+                        <a href="https://github.com/EmanDev/Counter-Strike--Source-Server-Launcher" target="_blank" class="secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Source Code">code</i></a>
+                        <a href="https://www.paypal.com/paypalme2/marcaida" target="_blank" class="secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Buy me a coffee">local_cafe</i></a>
+                        <a class="cursor-default secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Developed by EmanDev">info</i></a>
+                    </div>
+                </li>
+                <li class="collection-item">
+                    <div>Counter-Strike: Source Zombie Riot Mod - Hacks Extension V1.3.0.0
+                        <a href="#" target="_blank" class="secondary-content">
+                            <i class="material-icons tooltipped" data-position="bottom" data-tooltip="Download">file_download</i>
+                        </a>
+                        <a href="https://forums.alliedmods.net/attachment.php?attachmentid=17642&d=1183297980" target="_blank" class="secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Source Code">code</i></a>
+                        <a class="cursor-default secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Open for Public">info</i></a>
+                    </div>
+                </li>
+                <li class="collection-item">
+                    <div>Counter-Strike: Source Zombie Riot Mod Uninstaller v1.0 - Final
+                        <a href="#" target="_blank" class="secondary-content">
+                            <i class="material-icons tooltipped" data-position="bottom" data-tooltip="Download">file_download</i>
+                        </a>
+                        <a href="https://github.com/EmanDev/zombie-riot-mod-uninstaller" target="_blank" class="secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Source Code">code</i></a>
+                        <a href="https://www.paypal.com/paypalme2/marcaida" target="_blank" class="secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Buy me a coffee">local_cafe</i></a>
+                        <a class="cursor-default secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Developed by EmanDev">info</i></a>
+                    </div>
+                </li>
+                <li class="collection-item">
+                    <div>Counter-Strike: Source Zombie Riot Mod Uninstaller v2.0
+                        <a href="#" target="_blank" class="secondary-content">
+                            <i class="material-icons tooltipped" data-position="bottom" data-tooltip="Download">file_download</i>
+                        </a>
+                        <a href="https://github.com/EmanDev/Material-Counter-Strike-Source-Zombie-Riot-Mod-Uninstaller" target="_blank" class="secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Source Code">code</i></a>
+                        <a href="https://www.paypal.com/paypalme2/marcaida" target="_blank" class="secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Buy me a coffee">local_cafe</i></a>
+                        <a class="cursor-default secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Developed by EmanDev">info</i></a>
+                    </div>
+                </li>
+                <li class="collection-item">
+                    <div>Counter-Strike: Source Zombie Riot Mod V1.9.1b (Fixed)
+                        <a href="#!" target="_blank" class="secondary-content">
+                            <i class="material-icons tooltipped" data-position="bottom" data-tooltip="Download">file_download</i>
+                        </a>
+                        <a href="https://forums.alliedmods.net/attachment.php?attachmentid=87748&d=1308601316" target="_blank" class="secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Source Code">code</i></a>
+                        <a class="cursor-default secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Files merged by EmanDev">info</i></a>
+                    </div>
+                </li>
+                <li class="collection-item">
+                    <div>Foobar2000 CAD Component
+                        <a href="http://rangercd.github.io/foo-cad-plus/" target="_blank" class="secondary-content">
+                            <i class="material-icons tooltipped" data-position="bottom" data-tooltip="Download">file_download</i>
+                        </a>
+                        <a href="https://github.com/RangerCD/foo-cad-plus" target="_blank" class="secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Source Code">code</i></a>
+                        <a class="cursor-default secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Updated by RangerCD">info</i></a>
+                    </div>
+                </li>
+                <li class="collection-item">
+                    <div>Metamod:Source
+                        <a href="https://www.sourcemm.net/downloads.php?branch=stable" target="_blank" class="secondary-content">
+                            <i class="material-icons tooltipped" data-position="bottom" data-tooltip="Download">file_download</i>
+                        </a>
+                        <a href="https://github.com/alliedmodders/metamod-source/tree/63da1c34c537afae6dbf084fe088e60" target="_blank" class="secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Source Code">code</i></a>
+                        <a class="cursor-default secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Developed by Allidemodders">info</i></a>
+                    </div>
+                </li>
+                <li class="collection-item">
+                    <div>Sourcemod
+                        <a href="https://www.sourcemod.net/downloads.php?branch=stable" target="_blank" class="secondary-content">
+                            <i class="material-icons tooltipped" data-position="bottom" data-tooltip="Download">file_download</i>
+                        </a>
+                        <a href="https://github.com/alliedmodders/sourcemod/tree/c5efe48aa3116d836ae9b9e475647d7" target="_blank" class="secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Source Code">code</i></a>
+                        <a class="cursor-default secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Developed by Allidemodders">info</i></a>
+                    </div>
+                </li>
+                <li class="collection-item">
+                    <div>SteamCMD
+                        <a href="https://developer.valvesoftware.com/wiki/SteamCMD#Downloading_SteamCMD" target="_blank" class="secondary-content">
+                            <i class="material-icons tooltipped" data-position="bottom" data-tooltip="Download">file_download</i>
+                        </a>
+                        <a class="cursor-default secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Source Code Unavailable">code</i></a>
+                        <a class="cursor-default secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Developed by Valve">info</i></a>
+                    </div>
+                </li>
+                <li class="collection-item">
+                    <div>Sword Art Online Utilities: Music Player Plugin Support
+                        <a href="#" target="_blank" class="secondary-content">
+                            <i class="material-icons tooltipped" data-position="bottom" data-tooltip="Download">file_download</i>
+                        </a>
+                        <a class="secondary-content margin-right-10"><i class="cursor-default material-icons tooltipped" data-position="bottom" data-tooltip="Source is HTML">code</i></a>
+                        <a class="cursor-default secondary-content margin-right-10"><i class="material-icons tooltipped" data-position="bottom" data-tooltip="Compiled by Joshua GP Beta">info</i></a>
+                    </div>
+                </li>
+            </ul>
+            <br>
+        </div>
+    </main>
+    <footer class="page-footer grey darken-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12 m6">
+                    <h5 class="white-text">EmanDev.GitHub.Io</h5>
+                    <p class="grey-text text-lighten-4">EmanDev.github.io contains posts and videos about game and
+                        windows tutorials along with certain app developments.
+                    </p>
+                    <p class="grey-text text-lighten-4">If I ever helped you in some way, consider buying me a coffee ☕
+                        - <a href="https://www.paypal.me/marcaida" target="_blank">The MonoChrome Paypal</a>
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12 m6">
+                    <h5 class="white-text">Social Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://disqus.com/by/MonoChromeDev/">Disqus</a>
+                        </li>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/EmanDev">GitHub</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://twitter.com/Eman_MonoChrome">Twitter</a>
+                        </li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.youtube.com/channel/UCtRWt7r0ZTyp1MrHhsZxOUA/featured?view_as=subscriber">YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.tooltipped');
+            var instances = M.Tooltip.init(elems, {
+                enterDelay: 0,
+                exitDelay: 0
+            });
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems, {
+                preventScrolling: true,
+                dismissible: false
+            });
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, {});
+
+        });
+    </script>
+    <script>
+        // Search Function for Search Bar
+        function search_download() {
+            let input = document.getElementById('searchBar').value
+            input = input.toLowerCase();
+            let x = document.getElementsByClassName('collection-item');
+
+            for (i = 0; i < x.length; i++) {
+                if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                    x[i].style.display = "none";
+                } else {
+                    x[i].style.display = "list-item";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
