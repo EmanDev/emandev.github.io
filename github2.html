@@ -15,7 +15,7 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <!--Import custom style.css-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Downloads - EmanDev</title>
+    <title>GitHub Projects - EmanDev</title>
     <meta name="description" content="Downloads page for EmanDev.GitHub.Io which contains compiled developed applications and some files from the tutorials.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="https://lh3.googleusercontent.com/pGiA3Rkwl_HwECT7IV2ejeWQBSZ7LgVw2hhlOjuN_NlReqYzoGZZEays0fqzUpWjRiMDWao9bAeWpAs6QHPwumTHs7i5Q8pQp7UrD1M_ID_6GA0XSOZDC6aZy3NqPMej-YLpS3cjd8Y7dZBVJbQoiwMattOL4dwqS6AoZwj52F7Bhk7R8M2dKEb374JQtXZwqS8E0GwoqH-pjrrWUPnPqgoMD4DJ4yacaSjGWUSS0hnv6zSPFQ94ekG2j0OKuVPwTUPvtlykxrjujE_XBeNbyfGfX-g7qLk7XeiPkNVtHFoGGWXBSjVEorc6KHfnRoDgeWU9qz9pqABHvlOaSipxC3t4nSRMWgWyJ8c49z5Mv-K5KEyg5k1kx4NMNbHvi9absJ-xi8kMZ_XGE610qL1QtuUVt9aYgoRPgBgfzu-PjYTDwPOhCq2ijhpzFXo7C1Xl8EphpfCIcTCA59gDdvv_QVN1_lwf8xFbzY08FiKh12ckEzzrBLE2xlTVFiVw-W0E_mdMbfyzKwRLhQgfkz3My48TYp9j3KuHZNtsu1JuCGD_cQgDX1_S8zOmEAqGcuM2mN2daCdKLh2IO7I24NPW7cmKCnmyAZD1AU60f3Hl5ZhRe6ToyuicUngBJyAYCq2WlSi6VLJjo9ULUyNkrJMQyFth2XLcnkE=s96-no" />
@@ -89,7 +89,6 @@
                         <li><a class="tooltipped" data-position="bottom" data-tooltip="GitHub Projects" href="github.html"><i class="material-icons">work</i></a></li>
                         <li><a class="tooltipped modal-trigger" data-position="bottom" data-tooltip="Information" href="#modal-info"><i class="material-icons">info</i></a></li>
                         <li><a href="#lite-mode" class="btn red btn-floating pulse modal-trigger tooltipped" data-position="bottom" data-tooltip="Lite Mode"><i class="material-icons">directions_run</i></a></li>
-                        <li><a href="#announcement" class="btn red btn-floating pulse modal-trigger tooltipped" data-position="bottom" data-tooltip="Announcements"><i class="material-icons">announcement</i></a></li>
                     </ul>
                 </div>
             </div>
@@ -98,8 +97,6 @@
             <li><a href="index.html"><i class="material-icons">home</i>Home</a></li>
             <li><a href="downloads.html"><i class="material-icons">file_download</i>Downloads</a></li>
             <li><a class="modal-trigger" href="#modal-info"><i class="material-icons">info</i>Information</a></li>
-            <li><a class="modal-trigger" href="#lite-mode"><i class="material-icons">directions_run</i>Lite Mode</a></li>
-            <li><a class="modal-trigger" href="#announcement"><i class="material-icons">announcement</i>Announcements</a></li>
         </ul>
         <!--Modals-->
         <div class="modal" id="modal-info">
@@ -168,73 +165,22 @@
                 <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
             </div>
         </div>
-        <!--Announcement-->
-        <div class="modal" id="announcement">
-            <div class="modal-content">
-                <h4>Announcements</h4>
-                <div class="divider"></div>
-                <h5>Future Website Development Plans</h5>
-                <p id="announcement-info">
-                    I am currently planning on adding more features to this website please check the following list below.
-                    <br>
-                </p>
-                <div class="divider"></div>
-                <h5>Plans</h5>
-                <p id="plans-1">
-                    <b>Bold</b> texts are highlighted as priorty, the rest are not but will be implemented.
-                    <ul id="list-indent">
-                        <li>
-                            <p>• <b>Release</b> of new page "GITHUB PROJECTS" with same style of downloads page.</p>
-                        </li>
-                        <li>
-                            <p>• [Feature] Downloads will receive new status icon for file size in bytes.</p>
-                        </li>
-                        <li>
-                            <p>• [Feature] Downloads will receive new status icon for hashes (MD5, SHA-1, SHA-256, SHA-384, SHA-512).</p>
-                        </li>
-                    </ul>
-                    Estimated Time of Arrival: 1 month from now.
-                    <br>
-                    Stamp: 11:00 PM 12/7/2019
-                </p>
-                <div class="divider"></div>
-                <h5>Changelogs</h5>
-                <p id="changelogs-1">
-                    This list contains added updates to the website.
-                    <ul id="list-indent">
-                        <li>
-                            <p>
-                                • Added new button for mirrored downloads
-                            </p>
-                        </li>
-                        <li>
-                            <p>• Fixed missing css styles</p>
-                        </li>
-                    </ul>
-                </p>
-            </div>
-            <div class="divider"></div>
-            <div class="modal-footer">
-                <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
-            </div>
-        </div>
-        <!--Modals for downloads page-->
-        <div class="modal" id="dlinfo">
+        <!--Modals for githubs projects page-->
+        <!--Change picture-->
+        <div class="modal" id="repoinfo">
             <div class="modal-content">
                 <h4>Download Info</h4>
                 <div class="divider"></div>
-                <h5>Download Sources</h5>
-                <p id="dlinfo-info">
-                    Some download files are not open source and codes are not available in the public, and some
-                    downloads' sources are archived within zips which requires download. However, I assure you that
-                    these download files are safe and does not cause any harm. Otherwise,
-                    contact me through <a href="mailto:emzzdroidlollipop@gmail.com">emzzdroidlollipop@gmail.com</a>.
+                <h5>Repository Sources</h5>
+                <p id="repoinfo-info">
+                    Repositories can only be found on my GitHub Profile. Some of them might be on archives downloaded from the repository, so navigate first to the repository and if you want the archive get it from there. If you have issues email me at <a href="mailto:emzzdroidlollipop@gmail.com">emzzdroidlollipop@gmail.com</a> or make an open issue on the specific repository.
                 </p>
                 <div class="divider"></div>
-                <h5>Compiled Projects</h5>
-                <p id="dlinfo-compiled">All of my projects are open source and you can view the code publicly. Please
-                    don't mirror them. If you want, compile them yourself with some modifications and upload them where
-                    you want. Some of my latest developed projects will be released here, check my GitHub Repositories for more details.
+                <h5>Projects</h5>
+                <p id="repoinfo-project">Projects are made through different intentions, as for me, some of them were created through the likings of a game and to further improve the its convenience.
+                    <br>
+                    <br>
+                    Note: My projects should not cause harm in any way.
                 </p>
             </div>
             <div class="divider"></div>
@@ -242,27 +188,27 @@
                 <a href="#" class="modal-close waves-effect waves-green btn-flat">OK</a>
             </div>
         </div>
-        <div class="modal" id="download_step">
+        <div class="modal" id="search_step">
             <div class="modal-content">
-                <h4>How to download</h4>
+                <h4>How to find a Repository</h4>
                 <div class="divider"></div>
                 <h5>Step 1</h5>
-                <p id="dl-s1">
-                    Select a file you want to download from below.
+                <p id="rs-s1">
+                    Search for a repository name you want to visit.
                 </p>
                 <img src="img/choose-file.png" alt="Choose file" class="modal-img responsive-img">
                 <br>
                 <div class="divider"></div>
                 <h5>Step 2</h5>
-                <p id="dl-s2">
-                    Wait for the link to load and click <b>Skip Ad</b> on the top right corner.
+                <p id="rs-s2">
+                    Check the status of repository.
                 </p>
                 <img src="img/skip_stuff.png" alt="Skip Ad" class="modal-img responsive-img">
                 <br>
                 <div class="divider"></div>
                 <h5>Step 3</h5>
-                <p id="dl-s3">
-                    Then click the download button to start downloading.
+                <p id="rs-s3">
+                    Visit the repository via suggested link.
                 </p>
                 <img src="img/download.png" alt="Download" class="modal-img responsive-img">
             </div>
@@ -271,48 +217,14 @@
                 <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
             </div>
         </div>
-        <div class="modal" id="modal-issues">
-            <div class="modal-content">
-                <h4>Frequent Issues</h4>
-                <div class="divider"></div>
-                <h5>How to download</h5>
-                <p id="fi-1">To download, please click <a href="#download_step" class="modal-trigger">how to download</a>.</p>
-                <div class="divider"></div>
-                <h5>Error while downloading</h5>
-                <p id="fi-2">
-                    File hosting server is probably down. If this happens, wait for about a minute then refresh and download again.
-                </p>
-                <div class="divider"></div>
-                <h5>Download speed is slow</h5>
-                <p id="fi-3">
-                    If you are using <b>Google Chrome</b> or <b>Firefox</b> while downloading, try using <a href="https://www.internetdownloadmanager.com/" target="_blank">Internet Download Manager</a> to improve download speed as it uses multiple servers to download.
-                </p>
-                <div class="divider"></div>
-                <h5>Cannot find the file to download</h5>
-                <p id="fi-4">
-                    To find the file you want to download use the search bar to search for it.
-                </p>
-                <img alt="Searching for file to download" class="modal-img responsive-img" src="img/search-download.gif">
-                <br>
-                <div class="divider"></div>
-                <h5>Download links redirects to an Ad website</h5>
-                <p id="fi-5">
-                    Download links have been shortened via <a href="https://shorte.st/login" target="_blank">Shorte.st</a>, which allows ad revenues from links. This helps me earn small of amount of money (not much since only few downloads from me). If you cannot continue, <a href="https://www.softwarehow.com/disable-adblock/" target="_blank">disable any adblocker</a> you use and reload.
-                </p>
-            </div>
-            <div class="divider"></div>
-            <div class="modal-footer"><a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a></div>
-        </div>
     </header>
     <main>
         <div class="container">
             <ul class="collection with-header">
                 <li class="collection-header">
-                    <h4>Downloads
-                        <a href="#download_step" class="btn blue pulse btn-floating modal-trigger tooltipped" data-position="bottom" data-tooltip="How to download"><i class="material-icons">file_download</i></a>
-                        <a href="#modal-issues" class="btn red pulse btn-floating modal-trigger tooltipped" data-position="bottom" data-tooltip="Frequent Issues"><i class="material-icons">question_answer</i></a>
-                        <a href="#dlinfo" class="btn green pulse btn-floating modal-trigger tooltipped" data-position="bottom" data-tooltip="Download Info"><i class="material-icons">info</i></a>
-                        <a href="https://emandev-downloads.herokuapp.com/" target="_blank" class="btn yellow pulse btn-floating tooltipped" data-position="bottom" data-tooltip="Mirrored Downloads"><i class="material-icons">folder</i></a>
+                    <h4>GitHub Repositories
+                        <a href="#search_step" class="btn blue pulse btn-floating modal-trigger tooltipped" data-position="bottom" data-tooltip="How to find a repository"><i class="material-icons">search</i></a>
+                        <a href="#repoinfo" class="btn green pulse btn-floating modal-trigger tooltipped" data-position="bottom" data-tooltip="Repositories"><i class="material-icons">info</i></a>
                     </h4>
                     <form id="searchForm">
                         <div class="input-field">
@@ -323,7 +235,7 @@
                     </form>
                 </li>
                 <li class="collection-item">
-                    <div>Aokana - Tools and Scripts (Translation is done by NekoNyan Soft)
+                    <div>emandev.github.io
                         <a href="http://destyy.com/w2Phzk" target="_blank" class="secondary-content">
                             <i class="material-icons tooltipped" data-position="bottom" data-tooltip="Download">file_download</i>
                         </a>
@@ -332,7 +244,7 @@
                     </div>
                 </li>
                 <li class="collection-item">
-                    <div>Counter-Strike: Global Offensive Video Settings
+                    <div>Counter-Strike: Source Server Launcher
                         <a href="img/csgo_settings.jpg" target="_blank" class="secondary-content">
                             <i class="material-icons tooltipped" data-position="bottom" data-tooltip="View">visibility</i>
                         </a>
@@ -342,7 +254,7 @@
                     </div>
                 </li>
                 <li class="collection-item">
-                    <div>Counter-Strike: Source Server Launcher v1.3
+                    <div>Counter-Strike: Source Zombie Riot Mod Uninstaller v1.0
                         <a href="http://destyy.com/w2Phkj" target="_blank" class="secondary-content">
                             <i class="material-icons tooltipped" data-position="bottom" data-tooltip="Download">file_download</i>
                         </a>
@@ -352,7 +264,7 @@
                     </div>
                 </li>
                 <li class="collection-item">
-                    <div>Counter-Strike: Source Zombie Riot Mod - Hacks Extension V1.3.0.0
+                    <div>Counter-Strike: Source Zombie Riot Mod Uninstaller v2.0
                         <a href="http://destyy.com/w2PhtS" target="_blank" class="secondary-content">
                             <i class="material-icons tooltipped" data-position="bottom" data-tooltip="Download">file_download</i>
                         </a>
@@ -508,6 +420,5 @@
         }
     </script>
 </body>
-<!--Written by EmanDev - Eman Marcaida-->
 
 </html>
