@@ -2,7 +2,7 @@
  * Style.css by Eman Marcaida
  * A CSS base modifier of certain classes and IDs
  * Custom-made 17/06/2019
- * Un-minified version (v0.3)
+ * Un-minified version (v0.4)
  * Untested
  */
 
@@ -31,6 +31,8 @@
 #fi-4,
 #fi-5,
 #announcement-info,
+#plans-1,
+#changelogs-1,
 #repoinfo-info,
 #repoinfo-project,
 #rs-s1,
