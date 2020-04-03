@@ -1,9 +1,9 @@
-/*!
- * Style.css by Eman Marcaida
+/*
+ * Style.css by Eman Marcaida (EmanDev)
  * A CSS base modifier of certain classes and IDs
  * Custom-made 17/06/2019
- * Un-minified version (v0.4)
- * Untested
+ * Un-minified version (v0.5)
+ * Updated 20200403
  */
 
 .grey.darken-nav {
@@ -30,9 +30,6 @@
 #fi-3,
 #fi-4,
 #fi-5,
-#announcement-info,
-#plans-1,
-#changelogs-1,
 #repoinfo-info,
 #repoinfo-project,
 #rs-s1,
