@@ -113,6 +113,23 @@
             </li>
         </ul>
         <!--Modals-->
+        <!--Link Error Modal-->
+
+        <div id="modal-linkerror" class="modal">
+            <div class="modal-content">
+                <h4>Links are down but WAIT!</h4>
+                <p id="linkerrorP">It seems that my short links are down, I'm using <a target="_blank"
+                        href="www.shorte.st">Shorte.st</a>. So before you get sad and start to worry, please download
+                    from my mirrored download server instead. It only contains latest files though. Check the "yellow
+                    folder" icon and Thank You for understanding, much appreciated.
+                    And please <b>ask for help</b> if needed.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">UNDERSTOOD</a>
+            </div>
+        </div>
+        <!--/ Link Error Modal-->
         <div class="modal" id="modal-info">
             <div class="modal-content">
                 <h4>Information</h4>
@@ -644,7 +661,14 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#modal-linkerror').modal('open');
+        });
+    </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.tooltipped');
